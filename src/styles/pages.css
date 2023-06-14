@@ -1,0 +1,10 @@
+.main-landing{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landScape{
+    height: fit-content;
+    width: fit-content;
+}

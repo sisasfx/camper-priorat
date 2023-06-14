@@ -7,3 +7,5 @@ export const Market = () => {
         </div>
     );
 }
+
+export default Market;

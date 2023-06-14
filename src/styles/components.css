@@ -1,0 +1,35 @@
+.navbar{
+    background-color: rgba(51,50,51,255);
+    color: white;
+}
+.logo-img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 2em;
+}
+.item-list{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 15%;
+}
+.item-from-list{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*FOOTER COMPONENT*/
+.foot{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(51,50,51,255);
+}
+.footer-page{
+    height: 11rem;
+    width: 50%;
+    align-self: flex-end;
+}

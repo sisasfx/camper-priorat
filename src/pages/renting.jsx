@@ -6,3 +6,5 @@ export const Renting = () => {
         <div></div>
     );
 }
+
+export default Renting;
