@@ -8,3 +8,13 @@
     height: fit-content;
     width: fit-content;
 }
+.description-box{
+    display: flex;
+    flex-direction: row;
+}
+.description{
+    width: 45%;
+}
+.landScape{
+    width: 45%;
+}
