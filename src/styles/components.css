@@ -20,6 +20,8 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 /*FOOTER COMPONENT*/
 .foot{

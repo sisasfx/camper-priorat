@@ -1,5 +1,6 @@
 import React from "react";
 import landScape from "../img/logo_landScape.png";
+import contactCard from "../img/contact_card.png";
 import "../styles/pages.css";
 export const Landing = () => {
   return (
@@ -7,7 +8,7 @@ export const Landing = () => {
       <main className="description-box">
         <p className="description">
           ¡Bienvenidos a Camper Priorat! Nos complace presentarles nuestra nueva
-          empresa especializada en camperizació, venta y alquiler de furgonetas
+          empresa especializada en camperización, venta y alquiler de furgonetas
           camperizadas. En Camper Priorat hemos creado un concepto único que
           combina la libertad de explorar la naturaleza con el confort de un
           hogar sobre ruedas. Estamos ubicados en el impresionante entorno del
@@ -46,8 +47,11 @@ export const Landing = () => {
           ¡Contáctenos hoy mismo y comencemos a planificar su próxima aventura!
           ¡Aventúrese, explore y viva la experiencia con Camper Priorat!
         </p>
+      <section className="logo-section">
         <img className="landScape" alt="logo-landScape" src={landScape} />
-      </main>
+        <img className="contactCard" alt="logo-contactCard" src={contactCard} />
+      </section>
+      </main>1     
     </div>
   );
 };
