@@ -1,9 +1,10 @@
 .main-landing{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/wood-591631_1920.jpg");
 }
 .description-box{
     display: flex;
@@ -16,6 +17,12 @@
 }
 .description{
     width: 45%;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(51,50,51,255);
+    border-radius: 1rem;
+    padding: 2rem;
 }
 .logo-section{
     display: flex;
@@ -23,12 +30,13 @@
     justify-content: space-between;
 }
 .landScape{
-    height: 45%;
+    height: 40%;
     width: 80%;
     margin-left: 1.5rem;
 }
 .contactCard{
-    height: 45%;
+    height: 40%;
     width: 80%;
     margin-left: 1.5rem;
+    padding: 2rem;
 }
