@@ -4,9 +4,9 @@ import contactCard from "../img/contact_card.png";
 import "../styles/pages.css";
 export const Landing = () => {
   return (
-    <div className="main-landing">
-      <main className="description-box">
-        <p className="description">
+    <main className="main-landing">
+      <section className="description-box-1">
+        {/*<p className="description">
           ¡Bienvenidos a Camper Priorat! Nos complace presentarles nuestra nueva
           empresa especializada en camperización, venta y alquiler de furgonetas
           camperizadas. En Camper Priorat hemos creado un concepto único que
@@ -46,13 +46,30 @@ export const Landing = () => {
           nuestra pasión por la naturaleza y los deportes de montaña.
           ¡Contáctenos hoy mismo y comencemos a planificar su próxima aventura!
           ¡Aventúrese, explore y viva la experiencia con Camper Priorat!
+        </p>*/}
+        <p className="description">
+          ¡Bienvenidos a Camper Priorat! Descubre la libertad de viajar con
+          nuestra furgoneta camperizada. Explora la naturaleza sin renunciar a
+          la comodidad de un hogar sobre ruedas.
         </p>
-      <section className="logo-section">
         <img className="landScape" alt="logo-landScape" src={landScape} />
-        <img className="contactCard" alt="logo-contactCard" src={contactCard} />
       </section>
-      </main>1     
-    </div>
+      <section className="description-box-2">
+        <div className="indescription-2">
+          <img className="woodLogo" alt="woodlogo" src={contactCard}/>
+          <p className="description">
+            ¿Qué nos hace diferentes? La combinación perfecta de aventura y
+            confort.
+          </p>
+        </div>
+        <p className="diamont-title">Tenemos lo que necesitas para:</p>
+        <div className="diamonts">
+          <div className="hexagon">Para senderismo o ciclismo</div>
+          <div className="hexagon">Escalada</div>
+          <div className="hexagon">Disfrutar de entorno privilegiado</div>
+        </div>
+      </section>
+    </main>
   );
 };
 

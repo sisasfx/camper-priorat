@@ -1,42 +1,95 @@
 .main-landing{
-    height: auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
     background-image: url("../img/wood-591631_1920.jpg");
 }
-.description-box{
+.description-box-1{
     display: flex;
     flex-direction: row;
     width: 80%;
     height:auto;
     padding: 5rem;
     justify-content: center;
-    overflow-y: auto;
+}
+.description-box-2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height:auto;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.indescription-2{
+    display: flex;
+    flex-direction: row;
 }
 .description{
     width: 45%;
     height: auto;
     color: white;
     font-weight: bold;
+    font-size: 1.5rem;
     background-color: rgba(51,50,51,255);
     border-radius: 1rem;
     padding: 2rem;
-}
-.logo-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .landScape{
     height: 40%;
     width: 80%;
     margin-left: 1.5rem;
 }
-.contactCard{
-    height: 40%;
-    width: 80%;
-    margin-left: 1.5rem;
+.diamont-title{
+    width: 45%;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgba(51,50,51,255);
+    border-radius: 1rem;
     padding: 2rem;
 }
+.diamonts{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+/*HEXAGON TEST*/
+
+.hexagon {
+    width: 14%;
+    height: 20vh;
+    background: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .hexagon::before {
+    content: "";
+    position: absolute;
+    top: -49.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 95px solid transparent;
+    border-right: 95px solid transparent;
+    border-bottom: 50.8675px solid;
+  }
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -50.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 95px solid transparent;
+    border-right: 95px solid transparent;
+    border-top: 50.8675px solid;
+  }
