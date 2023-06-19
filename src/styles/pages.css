@@ -36,10 +36,11 @@
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    background-color: rgba(51,50,51,255);
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(rgba(51,50,51,255), #ccc);
     border-radius: 1rem;
     padding: 2rem;
-    border-radius: 80%;
+    /*border-radius: 80%;*/
     align-items: center;
 }
 .description-2{
@@ -50,10 +51,11 @@
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    background-color: rgba(51,50,51,255);
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(#ccc,rgba(51,50,51,255) );
     border-radius: 1rem;
     padding: 2rem;
-    border-radius:100%;
+    /*border-radius:100%;*/
     
 }
 .landScape{
@@ -65,34 +67,50 @@
     width: 45%;
 }
 .activity-title{
-    width: 45%;
+    width: 60%;
     height: auto;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: 1rem;
     padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 .card-activity{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
 }
 .escalada{
     height: 20rem;
-    width: 33%;
+    width: 30%;
     border-radius: 2rem;
 }
 .piragua{
     height: 20rem;
-    width: 33%;
+    width: 30%;
     border-radius: 2rem;
 }
 .sky{
     height: 20rem;
-    width: 33%;
+    width: 30%;
     border-radius: 2rem;
+}
+
+/*  RENTING  */
+.main-renting{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.each-slide > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
 }
