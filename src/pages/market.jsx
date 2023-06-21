@@ -2,7 +2,7 @@ import React from "react";
 
 export const Market = () => {
     return(
-        <div>
+        <div className="main-market">
             
         </div>
     );

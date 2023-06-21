@@ -39,12 +39,12 @@
 /*SLIDER*/
 .slide-container{
     width: 60%;
-    height: 500px;
+    height: 600px;
 }
 .each-slide-effect > div{
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 550px;
+    height: 600px;
 }

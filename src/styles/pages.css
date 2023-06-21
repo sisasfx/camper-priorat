@@ -110,3 +110,13 @@
     overflow-y: auto;
     background-image: url("../img/wood-591631_1920.jpg");
 }
+
+/* MARKET */
+.main-market{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    background-image: url("../img/wood-591631_1920.jpg");
+}
