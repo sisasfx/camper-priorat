@@ -1,4 +1,4 @@
-.main-landing{
+.main-landing {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,29 +7,33 @@
     overflow-y: auto;
     background-image: url("../img/wood-591631_1920.jpg");
 }
-.description-box-1{
+
+.description-box-1 {
     display: flex;
     flex-direction: row;
     width: 80%;
-    height:auto;
+    height: auto;
     padding: 5rem;
     justify-content: center;
 }
-.description-box-2{
+
+.description-box-2 {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height:auto;
+    height: auto;
     padding: 5rem;
     align-items: center;
 }
-.indescription-2{
+
+.indescription-2 {
     display: flex;
     flex-direction: row;
     margin-bottom: 5rem;
     justify-content: space-between;
 }
-.description{
+
+.description {
     display: flex;
     width: 50%;
     height: auto;
@@ -37,13 +41,14 @@
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(rgba(51,50,51,255), #ccc);
+    background: linear-gradient(rgba(51, 50, 51, 255), #ccc);
     border-radius: 1rem;
     padding: 2rem;
     /*border-radius: 80%;*/
     align-items: center;
 }
-.description-2{
+
+.description-2 {
     display: flex;
     align-items: center;
     width: 40%;
@@ -52,21 +57,24 @@
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(#ccc,rgba(51,50,51,255) );
+    background: linear-gradient(#ccc, rgba(51, 50, 51, 255));
     border-radius: 1rem;
     padding: 2rem;
     /*border-radius:100%;*/
-    
+
 }
-.landScape{
+
+.landScape {
     height: 40%;
     width: 70%;
     margin-left: 1.5rem;
 }
-.contact-card{
+
+.contact-card {
     width: 45%;
 }
-.activity-title{
+
+.activity-title {
     width: 60%;
     height: auto;
     color: white;
@@ -76,7 +84,8 @@
     padding: 2rem;
     font-family: 'Courier New', Courier, monospace;
 }
-.card-activity{
+
+.card-activity {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -84,24 +93,27 @@
     align-items: center;
     margin-bottom: 5rem;
 }
-.escalada{
+
+.escalada {
     height: 20rem;
     width: 30%;
     border-radius: 2rem;
 }
-.piragua{
+
+.piragua {
     height: 20rem;
     width: 30%;
     border-radius: 2rem;
 }
-.sky{
+
+.sky {
     height: 20rem;
     width: 30%;
     border-radius: 2rem;
 }
 
 /*RENTING*/
-.title{
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,13 +123,14 @@
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(#ccc,rgba(51,50,51,255) );
+    background: linear-gradient(#ccc, rgba(51, 50, 51, 255));
     border-radius: 1rem;
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.main-renting{
+
+.main-renting {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -126,8 +139,29 @@
     background-image: url("../img/wood-591631_1920.jpg");
 }
 
+.description-box-3 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url("../img/logo_landScape.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.description-3 {
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    color: white;
+
+}
+
 /* MARKET */
-.main-market{
+.main-market {
     min-height: 100vh;
     display: flex;
     flex-direction: column;

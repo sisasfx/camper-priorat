@@ -15,8 +15,18 @@ export const Landing = () => {
           nuestra furgoneta camperizada. Explora la naturaleza sin renunciar a
           la comodidad de un hogar sobre ruedas.
         </p>
-        <img className="landScape" alt="logo-landScape" src={landScape} />
+        <img className="landScape-3" alt="logo-landScape" src={landScape} />
       </section>
+
+      <section className="description-box-3">
+        <p className="description-3">
+        ¡Bienvenidos a Camper Priorat! Descubre la libertad de viajar con
+          nuestra furgoneta camperizada. Explora la naturaleza sin renunciar a
+          la comodidad de un hogar sobre ruedas.
+        </p>
+        
+      </section>
+
       <section className="description-box-2">
       <p className="activity-title">Tenemos lo que necesitas para que puedas hacer</p>
        <div className="card-activity">
