@@ -100,17 +100,38 @@
     border-radius: 2rem;
 }
 
-/*  RENTING  */
-.main-renting{
+/*RENTING*/
+.title{
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    width: auto;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(#ccc,rgba(51,50,51,255) );
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-.each-slide > div{
+.main-renting{
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 100vh;
+    overflow-y: auto;
+    background-image: url("../img/wood-591631_1920.jpg");
+}
+
+/* MARKET */
+.main-market{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    background-image: url("../img/wood-591631_1920.jpg");
 }
