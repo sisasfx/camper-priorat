@@ -1,21 +1,69 @@
 .main-landing {
-    min-height: 100vh;
-    display: flex;
+
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
-    background-image: url("../img/wood-591631_1920.jpg");
+
+
 }
 
 .description-box-1 {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: auto;
-    padding: 5rem;
-    justify-content: center;
+    width: auto;
+    height: 69rem;
+    text-align: center;
+    background-image: url("../img/logo_landScape.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
+.description-box-3 {
+    width: auto;
+    height: 80rem;
+    position: relative;
+    text-align: center;
+}
+
+.image-container {
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1615412704911-55d589229864?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=982&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.description-3,
+.description-4 {
+    position: relative;
+    z-index: 1;
+}
+.description-3 {
+    width: 75%;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: black;
+    font-weight: bold;
+    
+}
+.description-4 {
+    width: 75%;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: black;
+    font-weight: bold;
+    filter: none;
+}
+
 
 .description-box-2 {
     display: flex;
@@ -33,20 +81,7 @@
     justify-content: space-between;
 }
 
-.description {
-    display: flex;
-    width: 50%;
-    height: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(rgba(51, 50, 51, 255), #ccc);
-    border-radius: 1rem;
-    padding: 2rem;
-    /*border-radius: 80%;*/
-    align-items: center;
-}
+
 
 .description-2 {
     display: flex;
@@ -75,11 +110,11 @@
 }
 
 .activity-title {
-    width: 60%;
+    width: 100%;
     height: auto;
     color: white;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 3rem;
     border-radius: 1rem;
     padding: 2rem;
     font-family: 'Courier New', Courier, monospace;
@@ -139,26 +174,6 @@
     background-image: url("../img/wood-591631_1920.jpg");
 }
 
-.description-box-3 {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    background-image: url("../img/logo_landScape.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-}
-
-.description-3 {
-    width: 50%;
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 2vw;
-    color: white;
-
-}
 
 /* MARKET */
 .main-market {
