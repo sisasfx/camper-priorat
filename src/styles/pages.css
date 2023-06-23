@@ -1,50 +1,56 @@
 .main-landing {
-
-
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
+    font-family: 'Courier New', Courier, monospace;
 }
-
+/* Section 1*/
 .description-box-1 {
     width: auto;
-    height: 69rem;
+    
     text-align: center;
-    background-image: url("../img/logo_landScape.png");
+    background-image: url("https://images.unsplash.com/photo-1615412704911-55d589229864?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=982&q=80");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:cover;
+    background-position: center;
+    
+}
+.logo1{
+    top: 50%;
+    width: 70%;
+    background-color: transparent;
 }
 
+/* Section 2*/
 .description-box-3 {
-    width: auto;
-    height: 80rem;
+    width: 80%;
+    height: 50rem;
     position: relative;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .image-container {
     position: absolute;
-    
     width: 100%;
-    height: 100%;
-    background-image: url("https://images.unsplash.com/photo-1615412704911-55d589229864?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=982&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%; 
     z-index: -1;
     filter: blur(5px);
 }
 
-.description-3,
-.description-4 {
-    position: relative;
-    z-index: 1;
-}
+
 .description-3 {
+    background-image: url("../img/wood-591631_1920.jpg");
+    top:10rem;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+    border-radius: 1rem;
     width: 75%;
-    position: relative;
-    top: 10%;
+    position: absolute;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3vw;
@@ -52,19 +58,35 @@
     font-weight: bold;
     
 }
+.description-body-2{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    margin-top: 15rem;
+    justify-content: center;
+    border-bottom: 4mm solid rgb(150, 101, 11);
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
 .description-4 {
-    width: 75%;
-    position: relative;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3vw;
+    border:2px;
+    
+    border-radius: 1rem;
+    padding:2rem;
+    margin-right: 5rem;
+    margin-top: 0%;
+    font-size: 5vh;
     color: black;
     font-weight: bold;
     filter: none;
 }
-
-
+.logo2{
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+}
+/*Section 3*/
 .description-box-2 {
     display: flex;
     flex-direction: column;
@@ -73,7 +95,24 @@
     padding: 5rem;
     align-items: center;
 }
-
+.activity-title {
+    width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    
+    
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../img/wood-591631_1920.jpg");
+    top:10rem;
+    text-align: center;
+    z-index: 1;
+    border-radius: 1rem;
+    font-size: 3vw;
+    color: black;
+    font-weight:bolder
+}
 .indescription-2 {
     display: flex;
     flex-direction: row;
@@ -88,7 +127,7 @@
     align-items: center;
     width: 40%;
     height: auto;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
@@ -98,28 +137,6 @@
     /*border-radius:100%;*/
 
 }
-
-.landScape {
-    height: 40%;
-    width: 70%;
-    margin-left: 1.5rem;
-}
-
-.contact-card {
-    width: 45%;
-}
-
-.activity-title {
-    width: 100%;
-    height: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 3rem;
-    border-radius: 1rem;
-    padding: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .card-activity {
     display: flex;
     flex-direction: row;
@@ -127,6 +144,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
+    margin-top: 10rem;
 }
 
 .escalada {
@@ -146,6 +164,20 @@
     width: 30%;
     border-radius: 2rem;
 }
+
+.landScape {
+    height: 40%;
+    width: 70%;
+    margin-left: 1.5rem;
+}
+
+.contact-card {
+    width: 45%;
+}
+
+
+
+
 
 /*RENTING*/
 .title {
