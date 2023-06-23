@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/pages.css";
 import Slider from "../components/slider.jsx";
+import Calendar from "../components/calendar";
 
 export const Renting = () => {
   return (
@@ -11,6 +12,7 @@ export const Renting = () => {
       <div className="slide-container">
         <Slider />
       </div>
+      <Calendar/>
     </div>
   );
 };

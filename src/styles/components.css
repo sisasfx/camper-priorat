@@ -48,3 +48,67 @@
     background-size: cover;
     height: 600px;
 }
+
+/*CALENDAR*/
+.calendar-box{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 300px;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+.calendar-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1rem;
+}
+.calendar-header > p{
+    font-weight: bold;
+    width: 70%;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.icons > .arrow-left{
+    margin-left: 3rem;
+    cursor: pointer;
+}
+.icons > .arrow-right{
+    margin-right: 3rem;
+    cursor: pointer;
+}
+.calendar-week-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.calendar-week-body ul li{
+    width: calc(100% /7);
+}
+.weeks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+}
+.weeks > li{
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem;
+    margin-left: -1rem;
+}
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+}
