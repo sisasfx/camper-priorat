@@ -1,107 +1,186 @@
-.main-landing{
-    min-height: 100vh;
+.main-landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Section 1*/
+.description-box-1 {
+    width: auto;
+    
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1615412704911-55d589229864?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=982&q=80");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+.logo1{
+    top: 50%;
+    width: 70%;
+    background-color: transparent;
+}
+
+/* Section 2*/
+.description-box-3 {
+    width: 80%;
+    height: 50rem;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+    filter: blur(5px);
+}
+
+
+.description-3 {
     background-image: url("../img/wood-591631_1920.jpg");
+    top:10rem;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+    border-radius: 1rem;
+    width: 75%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    color: black;
+    font-weight: bold;
+    
 }
-.description-box-1{
+.description-body-2{
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    height:auto;
-    padding: 5rem;
+    flex-direction:row;
+    width:100%;
+    margin-top: 15rem;
     justify-content: center;
+    border-bottom: 4mm solid rgb(150, 101, 11);
+    padding: 2rem;
+    border-radius: 1rem;
+    
 }
-.description-box-2{
+.description-4 {
+    border:2px;
+    
+    border-radius: 1rem;
+    padding:2rem;
+    margin-right: 5rem;
+    margin-top: 0%;
+    font-size: 5vh;
+    color: black;
+    font-weight: bold;
+    filter: none;
+}
+.logo2{
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+}
+/*Section 3*/
+.description-box-2 {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height:auto;
+    height: auto;
     padding: 5rem;
     align-items: center;
 }
-.indescription-2{
+.activity-title {
+    width: 100%;
+    height: auto;
+    color: rgb(0, 0, 0);
+    
+    
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../img/wood-591631_1920.jpg");
+    top:10rem;
+    text-align: center;
+    z-index: 1;
+    border-radius: 1rem;
+    font-size: 3vw;
+    color: black;
+    font-weight:bolder
+}
+.indescription-2 {
     display: flex;
     flex-direction: row;
     margin-bottom: 5rem;
     justify-content: space-between;
 }
-.description{
-    display: flex;
-    width: 50%;
-    height: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(rgba(51,50,51,255), #ccc);
-    border-radius: 1rem;
-    padding: 2rem;
-    /*border-radius: 80%;*/
-    align-items: center;
-}
-.description-2{
+
+
+
+.description-2 {
     display: flex;
     align-items: center;
     width: 40%;
     height: auto;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(#ccc,rgba(51,50,51,255) );
+    background: linear-gradient(#ccc, rgba(51, 50, 51, 255));
     border-radius: 1rem;
     padding: 2rem;
     /*border-radius:100%;*/
-    
+
 }
-.landScape{
-    height: 40%;
-    width: 70%;
-    margin-left: 1.5rem;
-}
-.contact-card{
-    width: 45%;
-}
-.activity-title{
-    width: 60%;
-    height: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    padding: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-.card-activity{
+.card-activity {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
+    margin-top: 10rem;
 }
-.escalada{
-    height: 20rem;
-    width: 30%;
-    border-radius: 2rem;
-}
-.piragua{
-    height: 20rem;
-    width: 30%;
-    border-radius: 2rem;
-}
-.sky{
+
+.escalada {
     height: 20rem;
     width: 30%;
     border-radius: 2rem;
 }
 
+.piragua {
+    height: 20rem;
+    width: 30%;
+    border-radius: 2rem;
+}
+
+.sky {
+    height: 20rem;
+    width: 30%;
+    border-radius: 2rem;
+}
+
+.landScape {
+    height: 40%;
+    width: 70%;
+    margin-left: 1.5rem;
+}
+
+.contact-card {
+    width: 45%;
+}
+
+
+
+
+
 /*RENTING*/
-.title{
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,13 +190,14 @@
     font-weight: bold;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(#ccc,rgba(51,50,51,255) );
+    background: linear-gradient(#ccc, rgba(51, 50, 51, 255));
     border-radius: 1rem;
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.main-renting{
+
+.main-renting {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -126,8 +206,9 @@
     background-image: url("../img/wood-591631_1920.jpg");
 }
 
+
 /* MARKET */
-.main-market{
+.main-market {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
