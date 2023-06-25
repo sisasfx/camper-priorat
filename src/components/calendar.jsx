@@ -19,15 +19,18 @@ export const Calendar = () => {
             </header>
             <div className="calendar-week-body">
                 <ul className="weeks">
-                    <li>Sun</li>
                     <li>Mon</li>
                     <li>Tue</li>
                     <li>Wed</li>
                     <li>Thu</li>
                     <li>Fri</li>
                     <li>Sat</li>
+                    <li>Sun</li>
                 </ul>
                 <ul className="days">
+                    <li className="inactive">29</li>
+                    <li className="inactive">30</li>
+                    <li className="inactive">31</li>
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
@@ -58,7 +61,8 @@ export const Calendar = () => {
                     <li>28</li>
                     <li>29</li>
                     <li>30</li>
-                    <li>1</li>
+                    <li className="inactive">1</li>
+                    <li className="inactive">2</li>
                 </ul>
             </div>
         </div>
