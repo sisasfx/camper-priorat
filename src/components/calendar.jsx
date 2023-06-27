@@ -13,10 +13,24 @@ export const Calendar = () => {
     const [daysOfMonthState, setDays] = useState(days)
     const [currentMonth, setCurrentMonth] = useState(months[month])
     
+    let firstDayOfMonth = new Date(currYear, month, 1).getDay();
     let lastDateofMonth = new Date(currYear, month + 1,0).getDate();
-    
+    let lasDateOfLastMonth = new Date(currYear, month,0).getDate();
+
+
+    for (let i = firstDayOfMonth-1; i > 0; i--){
+        let day = lasDateOfLastMonth - i + 1;
+        days.push({
+            'value': day,
+            'satus': 'inactive'
+        })
+    }
+
     for(let i = 1; i <= lastDateofMonth; i++){
-        days.push(i)
+        days.push({
+            'value': i,
+            'status': 'active'
+        })
     }
 
     
@@ -31,11 +45,26 @@ export const Calendar = () => {
     useEffect(() => {
         setCurrentMonth(months[month])
         days.splice(0, days.length)
+        let firstDayOfMonth = new Date(currYear, month, 1).getDay();
         let lastDateofMonth = new Date(currYear, month + 1,0).getDate();
-    
-        for(let i = 1; i <= lastDateofMonth; i++){
-            days.push(i)
-        }
+        let lasDateOfLastMonth = new Date(currYear, month,0).getDate();
+        
+        
+    for (let i = firstDayOfMonth-1; i > 0; i--){
+        let day = lasDateOfLastMonth - i + 1;
+        days.push({
+            'value': day,
+            'satus': 'inactive'
+        })
+    }
+
+    for(let i = 1; i <= lastDateofMonth; i++){
+        days.push({
+            'value': i,
+            'status': 'active'
+        })
+    }
+     
 
         setDays(days)
     },[month])
@@ -66,7 +95,7 @@ export const Calendar = () => {
                 </ul>
                 <ul className="days">
                     {daysOfMonthState.map(
-                        (item, key) => <li alt={key}>{item}</li>
+                        (item, key) => <li className={item.satus} alt={key}>{item.value}</li>
                     )}
                 </ul>
             </div>
