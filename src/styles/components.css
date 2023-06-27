@@ -112,6 +112,9 @@
     margin-top: .5rem;
     cursor: pointer;
 }
+.days li.active{
+    font-weight: bold;
+}
 .days li.inactive{
     color: #aaa;
 }

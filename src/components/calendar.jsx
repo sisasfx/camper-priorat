@@ -15,6 +15,7 @@ export const Calendar = () => {
     
     let firstDayOfMonth = new Date(currYear, month, 1).getDay();
     let lastDateofMonth = new Date(currYear, month + 1,0).getDate();
+    let lastDaysOfMonth = new Date(currYear, month, lastDateofMonth).getDay();
     let lasDateOfLastMonth = new Date(currYear, month,0).getDate();
 
 
@@ -22,7 +23,7 @@ export const Calendar = () => {
         let day = lasDateOfLastMonth - i + 1;
         days.push({
             'value': day,
-            'satus': 'inactive'
+            'status': 'inactive'
         })
     }
 
@@ -33,6 +34,14 @@ export const Calendar = () => {
         })
     }
 
+    for(let i = lastDaysOfMonth; i < 6; i++){
+        let day = i - lastDaysOfMonth +1
+        console.log(day)
+        days.push({
+            'value': day,
+            'status':'inactive'
+        })
+    }
     
     const changePlusMonth = () => {
         setIntMonth(month+1)
@@ -47,6 +56,7 @@ export const Calendar = () => {
         days.splice(0, days.length)
         let firstDayOfMonth = new Date(currYear, month, 1).getDay();
         let lastDateofMonth = new Date(currYear, month + 1,0).getDate();
+        let lastDaysOfMonth = new Date(currYear, month, lastDateofMonth).getDay();
         let lasDateOfLastMonth = new Date(currYear, month,0).getDate();
         
         
@@ -54,7 +64,7 @@ export const Calendar = () => {
         let day = lasDateOfLastMonth - i + 1;
         days.push({
             'value': day,
-            'satus': 'inactive'
+            'status': 'inactive'
         })
     }
 
@@ -64,7 +74,14 @@ export const Calendar = () => {
             'status': 'active'
         })
     }
-     
+    for(let i = lastDaysOfMonth; i < 6; i++){
+        let day = i- lastDaysOfMonth + 1
+        console.log(day);
+        days.push({
+            'value': day,
+            'status':'inactive'
+        })
+    } 
 
         setDays(days)
     },[month])
@@ -95,7 +112,7 @@ export const Calendar = () => {
                 </ul>
                 <ul className="days">
                     {daysOfMonthState.map(
-                        (item, key) => <li className={item.satus} alt={key}>{item.value}</li>
+                        (item, key) => <li className={item.status} alt={key}>{item.value}</li>
                     )}
                 </ul>
             </div>
