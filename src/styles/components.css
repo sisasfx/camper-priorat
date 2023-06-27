@@ -39,7 +39,7 @@
 /*SLIDER*/
 .slide-container{
     width: 60%;
-    height: 600px;
+    height: auto;
 }
 .each-slide-effect > div{
     display: flex;
