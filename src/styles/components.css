@@ -1,6 +1,10 @@
-.navbar{
+.navbar-desktop{
+    width: 100%;
     background-color: rgba(51,50,51,255);
     color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 .logo-img{
     height: 8rem;
@@ -23,6 +27,77 @@
     color: white;
     text-decoration: none;
 }
+
+/*NAVBAR RESPONSIVE*/
+@media screen and (max-width:2560px) and (min-width:701px){
+    .navbar-phone{
+        display: none;
+    }
+}
+@media screen and (max-width:700px) and (min-width:500px) {
+    .navbar-desktop ul{
+        width: 100%;
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
+    .navbar-phone{
+        display: none;
+    }
+}
+@media screen and (max-width:499px) and (min-width:300px){
+    .navbar-desktop{
+        display: none;
+    }
+    .navbar-phone{
+        display: flex;
+        align-items: center;
+        background-color: rgba(51,50,51,255);
+    }
+    .burger-button{
+        width: 50%;
+        margin-left: 50%;
+        font-size: 3rem;
+        color: white;
+    }
+    .item-list-phone.notOpen{
+        width: 200px;
+        height: 50vh;
+        position: absolute;
+        background-color: rgba(51,50,51,255);
+        transform: translateX(-100%);
+        transition: 0.5s ease all;
+        top: 8rem;
+        text-decoration: none;
+        list-style: none;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .item-list-phone.notOpen li{
+        cursor: pointer;
+        color: white;
+        margin-top: 2rem;
+    }
+    .item-list-phone.open{
+        width: 200px;
+        height: 50vh;
+        position: absolute;
+        background-color: rgba(51,50,51,255);
+        transform: translateX(0%);
+        transition: 0.5s ease all;
+        top: 8rem;
+        z-index: 2;
+        text-decoration: none;
+        list-style: none;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .item-list-phone.open li {
+        cursor: pointer;
+        color: white;
+        margin-top: 2rem;
+    }
+}
+
 /*FOOTER COMPONENT*/
 .foot{
     height: auto;
