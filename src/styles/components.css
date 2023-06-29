@@ -124,6 +124,17 @@
     height: 600px;
 }
 
+@media screen and (max-width:900px) and (min-width:769px){
+    .slide-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px) and (min-width:300px){
+    .slide-container{
+        width: 90%;
+    }
+}
+
 /*CALENDAR*/
 .calendar-box{
     display: flex;
