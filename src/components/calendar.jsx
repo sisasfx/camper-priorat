@@ -72,8 +72,6 @@ export const Calendar = () => {
     }
 
 
-
-
     useEffect(() => {
         setCurrentMonth(months[month])
         days.splice(0, days.length)
