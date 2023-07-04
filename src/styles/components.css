@@ -201,6 +201,10 @@
 .days li.active{
     font-weight: bold;
 }
+.days li.selected{
+    font-weight: bold;
+    background-color: #aaa;
+}
 .days li.inactive{
     color: #aaa;
 }
@@ -209,6 +213,17 @@
     font-weight: bold;
 }
 
+.booking-buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: .7rem;
+}
+.btn-success.false{
+    filter:blur(3px);
+}
+.btn-success.true{
+    filter:blur(0px)
+}
 @media  screen and (max-width:1450px) and (min-width:1150px) {
     .calendar-box{
         width: 33%;

@@ -8,10 +8,12 @@ export const Calendar = () => {
     let currYear = date.getFullYear();
     const months = ['January', 'February', 'March', 'April', 'May', 'June','July','August','Septembre', 'October','November','December'];
     const days = [];
-    
     const [month, setIntMonth] = useState(date.getMonth())
     const [daysOfMonthState, setDays] = useState(days)
     const [currentMonth, setCurrentMonth] = useState(months[month])
+    const [bookingDays, setBooking] = useState([])
+
+    const [canIbook, setCanIBook] = useState(false)
     
     let firstDayOfMonth = new Date(currYear, month, 1).getDay();
     let lastDateofMonth = new Date(currYear, month + 1,0).getDate();
@@ -36,7 +38,6 @@ export const Calendar = () => {
 
     for(let i = lastDaysOfMonth; i < 6; i++){
         let day = i - lastDaysOfMonth +1
-        console.log(day)
         days.push({
             'value': day,
             'status':'inactive'
@@ -50,6 +51,28 @@ export const Calendar = () => {
     const changeMinusMonth = () => {
         setIntMonth(month-1)
     }
+
+    const bookingManagement = (key) => {
+        if(bookingDays.length < 1){
+            setBooking([...bookingDays,key])
+        }else if(bookingDays.length >= 1 && bookingDays.length < 2){
+            setBooking([...bookingDays, key])
+        }else{
+            console.log("lenght --> ", bookingDays.length)
+            console.log(bookingDays)
+        }      
+    }
+
+    const checkDaysStatus = () => {
+        for(let i =bookingDays[0]; i <= bookingDays[1]; i++){
+            days[i].status = 'selected'
+        }
+        setDays(days)
+        setCanIBook(!canIbook)
+    }
+
+
+
 
     useEffect(() => {
         setCurrentMonth(months[month])
@@ -76,16 +99,13 @@ export const Calendar = () => {
     }
     for(let i = lastDaysOfMonth; i < 6; i++){
         let day = i- lastDaysOfMonth + 1
-        console.log(day);
         days.push({
             'value': day,
             'status':'inactive'
         })
     } 
-
         setDays(days)
     },[month])
-
 
     return(
         <div className="calendar-box">
@@ -112,9 +132,13 @@ export const Calendar = () => {
                 </ul>
                 <ul className="days">
                     {daysOfMonthState.map(
-                        (item, key) => <li className={item.status} alt={key}>{item.value}</li>
+                        (item, key) => <li className={item.status} alt={key} onClick={() => bookingManagement(key)}>{item.value}</li>
                     )}
                 </ul>
+            </div>
+            <div className="booking-buttons">
+                <button className={`btn btn-success ${canIbook}`}>Reservar</button>
+                <button className='btn btn-warning' onClick={checkDaysStatus}>Comprobar fechas</button>
             </div>
         </div>
     );
