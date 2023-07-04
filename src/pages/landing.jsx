@@ -10,7 +10,7 @@ export const Landing = () => {
   return (
     <main className="main-landing">
       <section className="description-box-1">
-        <img className="logo1" src={mainlogo} />
+        <div className="logo1"></div>
       </section>
 
       <section className="description-box-3">
