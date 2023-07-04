@@ -203,7 +203,8 @@
 }
 .days li.selected{
     font-weight: bold;
-    background-color: #aaa;
+    background-color: green;
+    border-radius: 1rem;
 }
 .days li.inactive{
     color: #aaa;

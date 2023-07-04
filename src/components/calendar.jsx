@@ -15,11 +15,17 @@ export const Calendar = () => {
 
     const [canIbook, setCanIBook] = useState(false)
     
-    let firstDayOfMonth = new Date(currYear, month, 1).getDay();
-    let lastDateofMonth = new Date(currYear, month + 1,0).getDate();
-    let lastDaysOfMonth = new Date(currYear, month, lastDateofMonth).getDay();
-    let lasDateOfLastMonth = new Date(currYear, month,0).getDate();
+    let firstDayOfMonth = new Date(currYear, month, 1).getDay(); //Primer dia de la semana
+    let lastDateofMonth = new Date(currYear, month + 1, 0).getDate();//Utlimo dia del mes 
+    let lastDaysOfMonth = new Date(currYear, month, lastDateofMonth).getDay();//Ultimo dia del mes en semana
+    let lasDateOfLastMonth = new Date(currYear, month,0).getDate();//Utlimo dia del mes anterior
 
+    console.group("Dates");
+        console.log("FirstDayOfMonth --> getDay() ", firstDayOfMonth);
+        console.log("FirstDateOfMonth --> getDate() ", lastDateofMonth);
+        console.log("LastDaysOfMonth --> getDay() ", lastDaysOfMonth);
+        console.log("LastDateOfLastMonth --> getDate() ", lasDateOfLastMonth);
+        console.groupEnd();
 
     for (let i = firstDayOfMonth-1; i > 0; i--){
         let day = lasDateOfLastMonth - i + 1;
