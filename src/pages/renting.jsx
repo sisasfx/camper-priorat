@@ -9,10 +9,11 @@ export const Renting = () => {
       <div className="title">
         <h1>Welcome to Camper Priorat Renting</h1>
       </div>
-      <div className="slide-container">
-        <Slider />
-      </div>
-      <Calendar/>
+      <section className="renting-section">
+        <div className="calendar-container">
+          <Calendar />
+        </div>
+      </section>
     </div>
   );
 };

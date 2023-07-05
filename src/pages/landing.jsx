@@ -1,8 +1,4 @@
 import React from "react";
-import landScape from "../img/logo_landScape.png";
-import contactCard from "../img/contact_card.png";
-import escaladaPhoto from "../img/escalada_priorat.jpg"
-import piraguaPhoto from "../img/piragua.jpg";
 import sky from "../img/snowboard.jpg";
 import logo from "../img/main_logo_trans.png";
 import "../styles/pages.css";

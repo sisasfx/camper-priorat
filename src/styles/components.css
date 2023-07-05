@@ -112,10 +112,6 @@
 }
 
 /*SLIDER*/
-.slide-container{
-    width: 60%;
-    height: auto;
-}
 .each-slide-effect > div{
     display: flex;
     align-items: center;
@@ -139,7 +135,7 @@
 .calendar-box{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 100%;
     height: fit-content;
     background-color: white;
     margin: 2rem;
@@ -210,8 +206,9 @@
     color: #aaa;
 }
 .days li:hover{
-    color: red;
     font-weight: bold;
+    background-color: green;
+    border-radius: 1rem;
 }
 
 .booking-buttons{
@@ -225,7 +222,7 @@
 .btn-success.true{
     filter:blur(0px)
 }
-@media  screen and (max-width:1450px) and (min-width:1150px) {
+/*@media  screen and (max-width:1450px) and (min-width:1150px) {
     .calendar-box{
         width: 33%;
     }
@@ -270,4 +267,4 @@
       .footer-page{
         width: auto;
     }
-}
+}*/
