@@ -4,41 +4,83 @@ import contactCard from "../img/contact_card.png";
 import escaladaPhoto from "../img/escalada_priorat.jpg"
 import piraguaPhoto from "../img/piragua.jpg";
 import sky from "../img/snowboard.jpg";
-import mainlogo from "../img/main_logo_trans.png";
+import logo from "../img/main_logo_trans.png";
 import "../styles/pages.css";
 export const Landing = () => {
   return (
     <main className="main-landing">
       <section className="description-box-1">
-        <img className="logo1" src={mainlogo} />
+        <div className="logo1"></div>
       </section>
 
       <section className="description-box-3">
-        <div className="image-container"></div>
-        <p className="description-3">¡Bienvenidos a Camper Priorat!</p>
-        <div className="description-body-2">
-          <p className="description-4">
-            Descubre la libertad de viajar con nuestra furgoneta camperizada.
-            Explora la naturaleza sin renunciar a la comodidad de un hogar sobre
-            ruedas.
-          </p>
-          <img className="logo2" src="https://images.unsplash.com/photo-1515876305430-f06edab8282a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
-        </div>
+
+        <p className="description-3">Adentrate en el emocionante mundo de la camperización, donde los limites
+          desaparecen y la libertad se convierte en tu mejor compañera de viaje.
+          Aquí encontrarás todo lo que necesitas para transformar tu furgoneta</p>
+
       </section>
 
       <section className="description-box-2">
-        <p className="activity-title">Especialistas en adaptarnos a tus actividades favoritas</p>
-        <div className="card-activity">
-          <img className="escalada" alt="escalada" src={escaladaPhoto} />
-          <img className="piragua" alt="piragua" src={piraguaPhoto} />
-          <img className="sky" alt="sky" src={sky} />
+        <div className="title-sec">
+          <h1 className="titulo-2">CAMPERIZA TU FURGONETA</h1>
+          <h3 className="parag-2">Nuestra empresa de camperización de furgonetas se enorgullece en ofrecer
+            una amplia gama de servicios para ayudarte a transformar tu furgoneta en un hogar
+            sobre ruedas personaliozado y funcional.
+          </h3>
         </div>
-        <div className="indescription-2">
-          <img className="contact-card" alt="contact-card" src={contactCard} />
-          <p className="description-2">
-            ¿Qué nos hace diferentes? La combinación perfecta de aventura y
-            confort.
-          </p>
+
+        <div class="card-container">
+          <div class="card-row">
+            <div class="card-logo">
+              <img class="logo-van" src={logo} />
+              <h3>Diseño personalizado</h3>
+              <p>Trabajamos estrechamente contigo para aprender tus requisitos y preferencias.
+                Haremos un plan personalizado que optimice el
+                 espacio de tu furgoneta maximizando la comodidad y la funcionalidad
+              </p>
+            </div>
+            <div class="card-logo">
+              <img class="logo-van" src={logo} />
+              <h3>Instalación de interiores</h3>
+              <p>Ya sea que deseas una cama cómoda, una cocina compacta, un sistema 
+                de almacenamiento inteligente o una zona de trabajo,
+                 nos encargamos de hacer realidad tu visión.
+              </p>
+            </div>
+            <div class="card-logo">
+              <img class="logo-van" src={logo} />
+              <h3>Sistema eléctrico y energía solar</h3>
+              <p>Ofrecemos servicios de instalación de sistemas eléctricos y 
+                energía para proporcionarte una fuente confiable de energía
+                mientras estás en la carretera
+              </p>
+            </div>
+          </div>
+          <div class="card-row">
+            <div class="card-logo">
+              <img class="logo-van" src={logo} />
+              <h3>Fonanería y sistemas de agua</h3>
+              <p>Instalación de tanques de agua, bombas de agua, grifos, fregaderos y
+                 duchas, garantizando que tengas acceso a agua limpia 
+                 y funcional durante tus viajes.</p>
+            </div>
+            <div class="card-logo">
+              <img class="logo-van" src={logo} />
+              <h3>Aislamiento y climatización</h3>
+              <p>Realizamos el aislamiento adecuado para mantener la temperatura
+                 deseada y ofrecemos opciones de climatización como ventiladores, 
+                acondicionadores de aire y calefacción.
+              </p>
+            </div>
+            <div class="card-logo">
+              <img class="logo-van" src={logo} />
+              <h3>Mobiliario y accesorios</h3>
+              <p>Desde almacenamiento y mesas plegables hasta sistemas de almacenamiento modulares,
+                 te ayudamos a elegir los elementos adecuados para optimizar el tamaño de tu furgoneta.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -5,112 +5,80 @@
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
 }
+
 /* Section 1*/
 .description-box-1 {
-    width: auto;
+    width: 100%;
     text-align: center;
-    background-image: url("https://images.unsplash.com/photo-1615412704911-55d589229864?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=982&q=80");
+
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
+
 }
-.logo1{
-    top: 50%;
-    width: 70%;
-    background-color: transparent;
+
+.logo1 {
+    background-image: url("../img/landscape_landing.png");
+    width: 100%;
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Section 2*/
 .description-box-3 {
     width: 80%;
-    height: 50rem;
+    height: fit-content;
     position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.image-container {
-    position: absolute;
-    width: 100%;
-    height: 100%; 
-    z-index: -1;
-    filter: blur(5px);
-}
+
 
 
 .description-3 {
-    background-image: url("../img/wood-591631_1920.jpg");
-    top:10rem;
     font-family: 'Courier New', Courier, monospace;
     z-index: 1;
     border-radius: 1rem;
     width: 75%;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3vw;
-    color: black;
+    top: 5rem;
+    font-size: 2rem;
+    position: relative;
+    color: rgb(129, 129, 129);
     font-weight: bold;
-    
+
 }
-.description-body-2{
-    display: flex;
-    flex-direction:row;
-    width:100%;
-    margin-top: 15rem;
-    justify-content: center;
-    border-bottom: 4mm solid rgb(150, 101, 11);
-    padding: 2rem;
-    border-radius: 1rem;
-    
-}
-.description-4 {
-    border:2px;
-    
-    border-radius: 1rem;
-    padding:2rem;
-    margin-right: 5rem;
-    margin-top: 0%;
-    font-size: 5vh;
-    color: black;
-    font-weight: bold;
-    filter: none;
-}
-.logo2{
-    width: 100%;
-    height: 70%;
-    border-radius: 1rem;
-}
+
+
+
 /*Section 3*/
+.titulo-2{
+    font-size: 5rem;
+}
+
 .description-box-2 {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: auto;
-    padding: 5rem;
-    align-items: center;
-}
-.activity-title {
-    width: 100%;
-    height: auto;
-    color: rgb(0, 0, 0);
-    
-    
-    border-radius: 1rem;
     padding: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    background-image: url("../img/wood-591631_1920.jpg");
-    top:10rem;
+    align-items: center;
+    position: relative;
+    top: 10rem;
     text-align: center;
-    z-index: 1;
-    border-radius: 1rem;
-    font-size: 3vw;
-    color: black;
-    font-weight:bolder
+    margin-bottom: 10rem;
 }
+.title-sec{
+    text-align: center;
+}
+.parag-2 {
+    margin: 5rem;
+}
+
 .indescription-2 {
     display: flex;
     flex-direction: row;
@@ -119,58 +87,54 @@
 }
 
 
-
-.description-2 {
+.card-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 40%;
-    height: auto;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(#ccc, rgba(51, 50, 51, 255));
-    border-radius: 1rem;
-    padding: 2rem;
-    /*border-radius:100%;*/
-
 }
-.card-activity {
+
+.card-row {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 10rem;
 }
 
-.escalada {
-    height: 20rem;
-    width: 30%;
-    border-radius: 2rem;
+.card-logo {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
 }
 
-.piragua {
-    height: 20rem;
-    width: 30%;
-    border-radius: 2rem;
-}
-
-.sky {
-    height: 20rem;
-    width: 30%;
-    border-radius: 2rem;
-}
-
-.landScape {
-    height: 40%;
+.logo-van {
     width: 70%;
-    margin-left: 1.5rem;
 }
 
-.contact-card {
-    width: 45%;
+@media screen and (max-width: 480px){
+    .titulo-2{
+        font-size: 3rem;
+        
+    }
+    .logo1 {
+        background-image: url("../img/landscape_landing.png");
+        width: 100%;
+        height: 25rem;
+        
+    }
+    .description-3{
+        font-size: 1.5rem;
+        width: 120%;
+    }
+    .card-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .parag-2{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px)  {
+    .slide-container {
+        width: 90%;
+    }
 }
 
 
