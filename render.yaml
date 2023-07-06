@@ -2,7 +2,7 @@ services:
   # A Docker web service
   - type: web
     name: webdis
-    runtime: docker
+    runtime: node
     repo: https://github.com/render-examples/webdis.git # optional
     region: oregon # optional (defaults to oregon)
     plan: standard # optional (defaults to starter instance type)
@@ -79,7 +79,7 @@ services:
   # A background worker that consumes a queue
   - type: worker
     name: queue
-    runtime: docker
+    runtime: node
     dockerfilePath: ./sub/Dockerfile # optional
     dockerContext: ./sub/src # optional
     branch: queue # optional
