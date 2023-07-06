@@ -163,19 +163,27 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .renting-section{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
+    margin-bottom: 4rem;
 }
 .calendar-container{
     display: flex;
     width: 25%;
+    height: fit-content;
     background-image: url('../img/wood-591631_1920.jpg');
     border-radius: 2rem;
     margin: 1rem;
+    box-shadow: 2px 2px 4px black;
+}
+.slider-container{
+    width: 75%;
+    margin-left: 2rem;
 }
 
 /* MARKET */

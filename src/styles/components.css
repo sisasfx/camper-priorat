@@ -112,23 +112,18 @@
 }
 
 /*SLIDER*/
-.each-slide-effect > div{
+.slider-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 600px;
+    flex-direction: row;
 }
-
-@media screen and (max-width:900px) and (min-width:769px){
-    .slide-container{
-        width: 80%;
-    }
-}
-@media screen and (max-width:768px) and (min-width:300px){
-    .slide-container{
-        width: 90%;
-    }
+.slider-container button{
+    height: fit-content;
+    margin-top: 40%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 5rem;
+    background-image:url("../img/wood-591631_1920.jpg");
+    box-shadow: 2px 2px 4px black;
 }
 
 /*CALENDAR*/
