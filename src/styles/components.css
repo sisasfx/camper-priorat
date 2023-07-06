@@ -115,6 +115,7 @@
 .slider-container{
     display: flex;
     flex-direction: row;
+    width: auto;
 }
 .slider-container button{
     height: fit-content;
@@ -126,6 +127,44 @@
     box-shadow: 2px 2px 4px black;
 }
 
+
+@media screen and (max-width:1094px) and (min-width:840px){
+    .slider-container{
+        width: 80%;
+    }
+    .item-img{
+        width: 800px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:839px) and (min-width:600px) {
+    .slider-container{
+        width: 80%;
+    }
+    .item-img{
+        width: 500px;
+        height: auto;
+    }
+}
+@media screen and (max-width:599px) and (min-width:520px) {
+    .slider-container{
+        width: 80%;
+    }
+    .item-img{
+        width: 375px;
+        height: auto;
+    }
+}
+@media screen and (max-width:519px) and (min-width:320px) {
+    .slider-container{
+        width: 100%;
+    }
+    .item-img{
+        width: 275px;
+        height: auto;
+    }
+}
 /*CALENDAR*/
 .calendar-box{
     display: flex;
@@ -246,15 +285,17 @@
         width: auto;
     }
 }
-
-@media screen and (max-width:499px) and (min-width:376px){
+*/
+@media screen and (max-width:499px) and (min-width:320px){
     .calendar-box{
-        width: 80%;
+        width: 100%;
+        margin: 0;
     }
       .footer-page{
         width: auto;
     }
 }
+/*
 @media screen and (max-width:375px) and (min-width:300px){
     .calendar-box{
         width: 90%;

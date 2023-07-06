@@ -23,7 +23,7 @@ export const Slider = ({imagenes}) => {
             {imagenes.map((item, key)=> {
                 return( 
                 <div>
-                    {currentImg === key && (<img key={key} src={item} alt="imagen"/>)}                    
+                    {currentImg === key && (<img className="item-img" key={key} src={item} alt="imagen"/>)}                    
                 </div> )               
             })}
             <button onClick={nextImage}>
