@@ -18,11 +18,11 @@ export const Renting = () => {
         <h1>Welcome to Camper Priorat Renting</h1>
       </div>
       <section className="renting-section">
-        <div className="calendar-container">
-          <Calendar />
-        </div>
         <div className="slider-container">
           <Slider imagenes={images}/>
+        </div>
+        <div className="calendar-container">
+          <Calendar />
         </div>
       </section>
     </div>

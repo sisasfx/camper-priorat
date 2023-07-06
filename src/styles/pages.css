@@ -185,6 +185,30 @@
     width: 75%;
     margin-left: 2rem;
 }
+@media screen and (max-width:1700px) and (min-width:1150px) {
+    .renting-section{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider-container{
+        width: 100%;
+    }
+    .calendar-container{
+        width: 33%;
+    }
+}
+@media screen and (max-width:769px){
+    .renting-section{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-bottom: 4rem;
+    }
+}
 
 /* MARKET */
 .main-market {
