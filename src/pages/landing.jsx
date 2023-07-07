@@ -1,7 +1,7 @@
 import React from "react";
-import sky from "../img/snowboard.jpg";
 import logo from "../img/main_logo_trans.png";
 import "../styles/pages.css";
+
 export const Landing = () => {
   return (
     <main className="main-landing">
