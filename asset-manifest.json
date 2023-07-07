@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/CamperPriorat/static/css/main.104c725e.css",
+    "main.js": "/CamperPriorat/static/js/main.38582004.js",
+    "static/media/wood-591631-1920.jpg": "/CamperPriorat/static/media/wood-591631-1920.7306d3f53b7de06ccea2.jpg",
+    "static/media/landscape-landing.png": "/CamperPriorat/static/media/landscape-landing.b2d659f2ff8f13b1adf4.png",
+    "static/media/main-logo-trans.png": "/CamperPriorat/static/media/main-logo-trans.e979bfd83ee3a76c41bf.png",
+    "static/media/IMG-20230619-WA0015.jpg": "/CamperPriorat/static/media/IMG-20230619-WA0015.8f0a59720abf4532fa5d.jpg",
+    "static/media/IMG-20230619-WA0016.jpg": "/CamperPriorat/static/media/IMG-20230619-WA0016.750275b91f2872b734c9.jpg",
+    "static/media/IMG-20230619-WA0017.jpg": "/CamperPriorat/static/media/IMG-20230619-WA0017.d024b490c998864f523b.jpg",
+    "static/media/IMG-20230619-WA0013.jpg": "/CamperPriorat/static/media/IMG-20230619-WA0013.53534421905fbb92e273.jpg",
+    "static/media/IMG-20230619-WA0012.jpg": "/CamperPriorat/static/media/IMG-20230619-WA0012.316fede9e40f9c061323.jpg",
+    "static/media/IMG-20230619-WA0014.jpg": "/CamperPriorat/static/media/IMG-20230619-WA0014.713bcde3ff52dcd8e65a.jpg",
+    "static/media/logo-three.png": "/CamperPriorat/static/media/logo-three.600a630d1a16e3de19a1.png",
+    "index.html": "/CamperPriorat/index.html",
+    "main.104c725e.css.map": "/CamperPriorat/static/css/main.104c725e.css.map",
+    "main.38582004.js.map": "/CamperPriorat/static/js/main.38582004.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.104c725e.css",
+    "static/js/main.38582004.js"
+  ]
+}
