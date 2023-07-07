@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/pages.css";
 import Calendar from "../components/calendar";
 import { Slider } from "../components/slider";
-import Renting1 from "../img/IMG-20230619-WA0012.jpg";
-import Renting2 from "../img/IMG-20230619-WA0013.jpg";
-import Renting3 from "../img/IMG-20230619-WA0014.jpg";
-import Renting4 from "../img/IMG-20230619-WA0015.jpg";
-import Renting5 from "../img/IMG-20230619-WA0016.jpg";
-import Renting6 from "../img/IMG-20230619-WA0017.jpg";
+import Renting1 from "../Img/IMG-20230619-WA0012.jpg";
+import Renting2 from "../Img/IMG-20230619-WA0013.jpg";
+import Renting3 from "../Img/IMG-20230619-WA0014.jpg";
+import Renting4 from "../Img/IMG-20230619-WA0015.jpg";
+import Renting5 from "../Img/IMG-20230619-WA0016.jpg";
+import Renting6 from "../Img/IMG-20230619-WA0017.jpg";
 
 
 export const Renting = () => {
