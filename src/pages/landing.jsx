@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../Img/main-logo-trans.png";
+import logo from "../img/main-logo-trans.png";
 import "../styles/pages.css";
 
 export const Landing = () => {
