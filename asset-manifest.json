@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CamperPriorat/static/css/main.104c725e.css",
-    "main.js": "/CamperPriorat/static/js/main.38582004.js",
+    "main.js": "/CamperPriorat/static/js/main.ec96c9a9.js",
     "static/media/wood-591631-1920.jpg": "/CamperPriorat/static/media/wood-591631-1920.7306d3f53b7de06ccea2.jpg",
     "static/media/landscape-landing.png": "/CamperPriorat/static/media/landscape-landing.b2d659f2ff8f13b1adf4.png",
     "static/media/main-logo-trans.png": "/CamperPriorat/static/media/main-logo-trans.e979bfd83ee3a76c41bf.png",
@@ -14,10 +14,10 @@
     "static/media/logo-three.png": "/CamperPriorat/static/media/logo-three.600a630d1a16e3de19a1.png",
     "index.html": "/CamperPriorat/index.html",
     "main.104c725e.css.map": "/CamperPriorat/static/css/main.104c725e.css.map",
-    "main.38582004.js.map": "/CamperPriorat/static/js/main.38582004.js.map"
+    "main.ec96c9a9.js.map": "/CamperPriorat/static/js/main.ec96c9a9.js.map"
   },
   "entrypoints": [
     "static/css/main.104c725e.css",
-    "static/js/main.38582004.js"
+    "static/js/main.ec96c9a9.js"
   ]
 }
