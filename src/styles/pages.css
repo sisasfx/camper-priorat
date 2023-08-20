@@ -157,7 +157,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
+/*
 .main-renting {
     min-height: 100vh;
     width: 100%;
@@ -168,7 +168,7 @@
 }
 .renting-section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
     margin-bottom: 4rem;
 }
@@ -195,7 +195,7 @@
         align-items: center;
     }
     .slider-container{
-        width: 100%;
+        width: auto;
     }
     .calendar-container{
         width: 33%;
@@ -217,8 +217,8 @@
     .calendar-container{
         width: auto;
     }
-}
-@media  screen and (max-width:768px) and (min-width:320px) {
+} */
+/* @media  screen and (max-width:768px) and (min-width:320px) {
     .renting-section{
         display: flex;
         flex-direction: column;
@@ -227,13 +227,13 @@
         justify-content: center;
         align-items: center;
     }
-    .slider-container{
+    .slider-section{
         width: auto;
     }
     .calendar-container{
         width: 60%;
     }
-}
+} */
 
 /* MARKET */
 .main-market {
@@ -242,5 +242,26 @@
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
-    background-image: url("../img/wood-591631-1920.jpg");
+}
+
+/* CONTACT */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-container > h2{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+}
+.contact-container > p {
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media  screen and (max-width:768px) and (min-width:320px){
+    .contact-container > img{
+        width: 70%;
+    }
 }

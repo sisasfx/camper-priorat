@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/components.css";
-import logo from "../img/logo-three.png";
+import logo from "../img/main-logo.png";
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export const NavBar = () => {
@@ -17,11 +17,11 @@ export const NavBar = () => {
           <Link to={"/market"} style={{ textDecoration: "none" }}>
             <li className="item-from-list">Venta</li>
           </Link>
-          <Link to={"/renting"} style={{ textDecoration: "none" }}>
-            <li className="item-from-list">Alquiler</li>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <li className="item-from-list">Contacto</li>
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
-            <li className="item-from-list">Contacto</li>
+            <li className="item-from-list">Home</li>
           </Link>
         </ul>
       </nav>
@@ -34,11 +34,11 @@ export const NavBar = () => {
           <Link to={"/market"} style={{ textDecoration: "none" }}>
             <li className="item-from-list-phone">Venta</li>
           </Link>
-          <Link to={"/renting"} style={{ textDecoration: "none" }}>
-            <li className="item-from-list-phone">Alquiler</li>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <li className="item-from-list-phone">Contacto</li>
           </Link>
           <Link to={"/"} style={{ textDecoration: "none" }}>
-            <li className="item-from-list-phone">Contacto</li>
+            <li className="item-from-list-phone">Home</li>
           </Link>
         </ul>
       </nav>

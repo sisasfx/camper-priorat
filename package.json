@@ -1,6 +1,6 @@
 {
   "homepage": "https://sisasfx.github.io/camper-priorat/",
-  "name": "camper_priorat",
+  "name": "camper-priorat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

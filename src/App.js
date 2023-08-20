@@ -3,7 +3,8 @@ import { NavBar } from "./components/navbar";
 import { Footer } from "./components/footer";
 import Landing from "../src/pages/landing.jsx";
 import Market from "../src/pages/market.jsx";
-import Renting from "../src/pages/renting.jsx"
+import Renting from "../src/pages/renting.jsx";
+import Contact from "../src/pages/contact.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route element={<Landing/>} path="/"/>
           <Route element={<Market/>} path="/market"/>
           <Route element={<Renting/>} path="/renting"/>
+          <Route element={<Contact/>} path="/contact"/>
         </Routes>
       <Footer/>
     </div>

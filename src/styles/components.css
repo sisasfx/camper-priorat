@@ -7,9 +7,8 @@
     align-items: center;
 }
 .logo-img{
-    height: 8rem;
-    width: 8rem;
-    border-radius: 2em;
+    height: max-content;
+    width: 20%;
 }
 .item-list{
     width: 50%;
@@ -44,7 +43,7 @@
         display: none;
     }
 }
-@media screen and (max-width:499px) and (min-width:300px){
+@media screen and (max-width:499px) and (min-width:200px){
     .navbar-desktop{
         display: none;
     }
@@ -55,7 +54,7 @@
     }
     .burger-button{
         width: 50%;
-        margin-left: 50%;
+        margin-left: 40%;
         font-size: 3rem;
         color: white;
     }
@@ -84,7 +83,7 @@
         background-color: rgba(51,50,51,255);
         transform: translateX(0%);
         transition: 0.5s ease all;
-        top: 8rem;
+        top: 5rem;
         z-index: 2;
         text-decoration: none;
         list-style: none;
@@ -95,6 +94,10 @@
         cursor: pointer;
         color: white;
         margin-top: 2rem;
+    }
+    .logo-img{
+        height: max-content;
+        width: 40%;
     }
 }
 
@@ -115,7 +118,8 @@
 .slider-container{
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 .slider-container button{
     height: fit-content;
@@ -127,6 +131,15 @@
     box-shadow: 2px 2px 4px black;
 }
 
+@media screen and (max-width:2500px) and (min-width:1095px) {
+    .slider-container{
+        width: 100%;
+    }
+    .item-img{
+        width: 800px;
+        height: auto;
+    }
+}
 
 @media screen and (max-width:1094px) and (min-width:840px){
     .slider-container{
